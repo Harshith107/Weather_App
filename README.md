@@ -1,5 +1,5 @@
 
-WeatherApp
+WeatherApp/
 A simple and informative weather application.
 
 Overview
