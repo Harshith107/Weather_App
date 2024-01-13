@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+
+}
+body{
+    background-color:black;
+}
+.card{
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    animation: gradient-animation 5s ease infinite;
+    background-size: 180% 180%;
+}
+
+@keyframes gradient-animation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search button{
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    background: black;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: 0.3s;
+}
+
+.search button:hover{
+    opacity: 0.6;
+}
+
+.search input{
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: lightslategray;
+    height: 60px;
+    padding: 10px 25px;
+    flex: 1;
+    font-size: 18px;
+    margin-right: 25px;
+
+}
+
+.search button img{
+    width: 16px;
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 450;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 225;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px; 
+    padding: 0 20px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.col img{
+   margin-right: 10px;
+   width: 40px;
+}
+
+.humidity, .wind{
+    font-size: 25px;
+    margin-top: -6px; 
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 13px;
+    font-size: 15px;
+    display: none;
+}
